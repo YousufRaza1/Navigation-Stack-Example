@@ -1,24 +1,35 @@
 //
 //  ContentView.swift
-//  Navigation-Stack-Example
+//  NavigationStackExample
 //
-//  Created by Yousuf Raza on 27/7/24.
+//  Created by Yousuf Raza on 25/7/24.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var navController = NavigationController.shared
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack(path: $navController.navPath) {
+            VStack {
+                Text("Root View")
+                Button(action: {
+                    navController.navPath.append(ScreenName.successScreen)
+                }) {
+                    Text("Goto first screen")
+                }
+            }
+            .navigationDestination(for: ScreenName.self) { name in
+                navController.getScreenViewFromScreenName(screenName: name)
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
 }
+
+
+
+
