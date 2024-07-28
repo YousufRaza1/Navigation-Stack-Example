@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct FirstScreen: View {
+    @ObservedObject private var navController = NavigationController.shared
     var body: some View {
-        Text("First Screen")
+        VStack{
+            Text("First Screen")
+            Button {
+                navController.pushNewScreen(name: .secondScreen(navigationTitle: "Second screen details"))
+            } label: {
+                Text("Go to second screen")
+            }
+            
+            Button {
+                navController.backToPreviousScreen()
+            } label: {
+                Text("Back to previous screen")
+            }
+
+        }
     }
 }
 

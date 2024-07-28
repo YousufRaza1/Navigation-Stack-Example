@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct ThirdScreen: View {
+    @ObservedObject private var navController = NavigationController.shared
     var body: some View {
-        Text("Third screen")
+        VStack{
+            Text("Third screen")
+            Button {
+                navController.pushNewScreen(name: .successScreen)
+            } label: {
+                Text("Go to success screen")
+            }
+            
+            Button {
+                navController.popNumberOfScreen(number: 2)
+            } label: {
+                Text("Remove 2 screen from navigation stack")
+            }
+
+        }
     }
 }
 

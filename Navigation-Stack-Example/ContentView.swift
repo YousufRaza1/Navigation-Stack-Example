@@ -14,13 +14,14 @@ struct ContentView: View {
             VStack {
                 Text("Root View")
                 Button(action: {
-                    navController.navPath.append(ScreenName.successScreen)
+                    navController.pushNewScreen(name: .firstScreen)
                 }) {
                     Text("Goto first screen")
                 }
+               
             }
             .navigationDestination(for: ScreenName.self) { name in
-                navController.getScreenViewFromScreenName(screenName: name)
+                getScreenViewFromScreenName(screenName: name)
             }
         }
     }
