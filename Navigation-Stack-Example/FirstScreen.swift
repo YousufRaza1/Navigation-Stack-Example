@@ -25,6 +25,9 @@ struct FirstScreen: View {
             }
 
         }
+        .navigationBarBackButtonHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationSplitViewStyle(.prominentDetail)
     }
 }
 

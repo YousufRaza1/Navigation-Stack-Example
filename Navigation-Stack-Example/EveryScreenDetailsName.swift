@@ -14,6 +14,8 @@ enum ScreenName: Hashable, Equatable {
     case secondScreen(navigationTitle: String = "")
     case thirdScreen
     case successScreen
+    case signUpScreen
+    case loginScreen
     
     var screenIdentifier: String {
         switch self {
@@ -25,6 +27,10 @@ enum ScreenName: Hashable, Equatable {
             "thirdScreen"
         case .successScreen:
             "successScreen"
+        case .signUpScreen:
+            "signUpScreen"
+        case .loginScreen:
+            "loginScreen"
         }
     }
 }
@@ -39,5 +45,9 @@ enum ScreenName: Hashable, Equatable {
         ThirdScreen()
     case .successScreen:
         SuccessScreen()
+    case .signUpScreen:
+        SignUpScreen()
+    case .loginScreen:
+        LoginScreen()
     }
 }

@@ -11,15 +11,7 @@ struct ContentView: View {
     @ObservedObject private var navController = NavigationController.shared
     var body: some View {
         NavigationStack(path: $navController.navPath) {
-            VStack {
-                Text("Root View")
-                Button(action: {
-                    navController.pushNewScreen(name: .firstScreen)
-                }) {
-                    Text("Goto first screen")
-                }
-               
-            }
+            LaunchScreen()
             .navigationDestination(for: ScreenName.self) { name in
                 getScreenViewFromScreenName(screenName: name)
             }

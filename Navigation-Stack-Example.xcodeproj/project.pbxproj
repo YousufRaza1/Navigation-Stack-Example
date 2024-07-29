@@ -17,6 +17,9 @@
 		968821052C542F5C00194672 /* ThirdScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968821042C542F5C00194672 /* ThirdScreen.swift */; };
 		968821072C54303F00194672 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 968821062C54303F00194672 /* ContentView.swift */; };
 		9688210B2C56196500194672 /* EveryScreenDetailsName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688210A2C56196500194672 /* EveryScreenDetailsName.swift */; };
+		9688211C2C5635D000194672 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688211B2C5635D000194672 /* LaunchScreen.swift */; };
+		9688211E2C563DDB00194672 /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688211D2C563DDB00194672 /* SignUpScreen.swift */; };
+		968821202C57640000194672 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9688211F2C57640000194672 /* LoginScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		968821042C542F5C00194672 /* ThirdScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdScreen.swift; sourceTree = "<group>"; };
 		968821062C54303F00194672 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9688210A2C56196500194672 /* EveryScreenDetailsName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EveryScreenDetailsName.swift; sourceTree = "<group>"; };
+		9688211B2C5635D000194672 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		9688211D2C563DDB00194672 /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
+		9688211F2C57640000194672 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 				968821022C542F5600194672 /* SuccessScreen.swift */,
 				968821042C542F5C00194672 /* ThirdScreen.swift */,
 				968821002C542F4C00194672 /* SecondScreen.swift */,
+				9688211B2C5635D000194672 /* LaunchScreen.swift */,
+				9688211D2C563DDB00194672 /* SignUpScreen.swift */,
+				9688211F2C57640000194672 /* LoginScreen.swift */,
 				968820FA2C542F2B00194672 /* FirstScreen.swift */,
 				96320A212C542CBE00FAE3F3 /* Assets.xcassets */,
 				96320A232C542CBE00FAE3F3 /* Preview Content */,
@@ -157,11 +166,14 @@
 			files = (
 				968821032C542F5600194672 /* SuccessScreen.swift in Sources */,
 				9688210B2C56196500194672 /* EveryScreenDetailsName.swift in Sources */,
+				9688211C2C5635D000194672 /* LaunchScreen.swift in Sources */,
 				968820FD2C542F3500194672 /* NavigationController.swift in Sources */,
 				968821072C54303F00194672 /* ContentView.swift in Sources */,
+				9688211E2C563DDB00194672 /* SignUpScreen.swift in Sources */,
 				96320A1E2C542CBD00FAE3F3 /* Navigation_Stack_ExampleApp.swift in Sources */,
 				968820FB2C542F2B00194672 /* FirstScreen.swift in Sources */,
 				968821012C542F4C00194672 /* SecondScreen.swift in Sources */,
+				968821202C57640000194672 /* LoginScreen.swift in Sources */,
 				968821052C542F5C00194672 /* ThirdScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
